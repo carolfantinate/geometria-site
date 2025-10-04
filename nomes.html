@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formath - Geometria</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @font-face {
+            font-family: 'HussarBold';
+            src: url(fontes/HussarBold.otf) format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gliker';
+            src: url(fontes/gliker.ttf) format('truetype');
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f6f3ee;
+            position: relative;
+        }
+
+        .titulo-2 {
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .titulo-2 h2 {
+            font-family: 'Gliker', serif;
+            font-size: 2.4em;
+            font-weight: normal;
+        }
+
+        .titulo-2 h3 {
+            font-size: 1.25em;
+        }
+
+        /*---------------section 1----------------*/
+
+        .sec-1 {
+            padding: 30px 100px;
+        }
+
+        .titulo-1 {
+            margin-bottom: 50px;
+        }
+
+        .sec-1 h1 {
+            color: #15644c;
+            font-family: 'HussarBold', sans-serif;
+            letter-spacing: 4px;
+        }
+
+        #menor {
+            font-size: 3em;
+        }
+
+        #maior {
+            font-size: 5em;
+            letter-spacing: 5px;
+        }
+
+        .sec-1 .titulo-2 h2,
+        .sec-1 .titulo-2 h3 {
+            color: #15644c;
+        }
+
+        .sec-1 p {
+            color: #73472c;
+            font-size: 17px;
+            width: 575px;
+        }
+
+        #p2 {
+            text-align: right;
+            margin: auto;
+        }
+
+        #tales-img {
+            width: 550px;
+            right: 0;
+            top: 0;
+            position: absolute;
+        }
+
+        /*----------------------section 2------------------------*/
+
+        .sec-2 {
+            position: relative;
+            padding: 40px 100px;
+            background-color: #15644c;
+            color: #f6f3ee;
+        }
+
+        .sec-2 .titulo-2 {
+            margin-top: 30px;
+        }
+
+        .sec-2 .titulo-2 h2,
+        .sec-2 h3 {
+            color: #eec9e2;
+        }
+
+        .subtitulo {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .p-tales {
+            width: 800px;
+        }
+
+        .pitagoras-section {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            left: 0;
+            width: 100%;
+            z-index: -2;
+            margin-top: 40px;
+            background-color: #15644c;
+        }
+
+        .pitagoras-content {
+            margin: 0 auto;
+        }
+
+        .pitagoras-content p {
+            width: 726px;
+        }
+
+        .contribuicoes {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .contribuicoes p {
+            width: 600px;
+        }
+
+        .sec-2 ul {
+            list-style: inside;
+        }
+
+        #teorema-tales-img {
+            position: absolute;
+            right: 0;
+            width: 400px;
+        }
+
+        #pitagoras2-img {
+            height: 500px;
+            width: 350px;
+        }
+
+        #teorema-pitagoras-img {
+            width: 160px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Formath</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#areas">ÁREAS</a></li>
+                <li><a href="index.html#hist">HISTÓRIA</a></li>
+                <li><a href="nomes.html">NOMES</a></li>
+                <li><a href="aplicacoes.html">APLICAÇÕES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-1">
+            <img src="imgs/tales.png" alt="Tales de Mileto" id="tales-img">
+            <div class="titulo-1">
+                <h1 id="menor">GRANDES</h1>
+                <h1 id="maior">PENSADORES</h1>
+            </div>
+
+            <div class="titulo-2">
+                <h2>Tales de Mileto</h2>
+                <h3>(624 a.C. - 546 a.C.)</h3>
+            </div>
+            <p>Tales nasceu em Mileto, cidade da região da Jônia (atual Turquia), por volta de 625 a.C. Ele foi o
+                pioneiro da filosofia ocidental e fundador da Escola Jônica, que incluía outros pensadores como
+                Anaximandro e Anaxímenes.
+            </p>
+
+            <br>
+
+            <p id="p2">Tales trouxe a matemática para a Grécia antiga, iniciando um estudo sistemático do conhecimento
+                matemático. Sua abordagem rigorosa permitiu avanços importantes, especialmente na astronomia e na
+                geometria, que impactaram profundamente o desenvolvimento científico.
+            </p>
+        </section>
+
+        <section class="sec-2">
+            <img src="imgs/teorema de tales.png" alt="Teorema de Tales" id="teorema-tales-img">
+            <h3 class="subtitulo">Contribuições Geométricas e o <br> Teorema de Tales</h3>
+            <p class="p-tales">
+                Conhecido como o "Pai da Geometria Descritiva", Tales introduziu a geometria na Grécia e desenvolveu
+                conceitos essenciais, como:
+            </p>
+            <ul class="p-tales">
+                <li>Ângulos da base de um triângulo isósceles são iguais.</li>
+                <li>Triângulos com dois ângulos e um lado iguais são congruentes.</li>
+            </ul>
+            <p class="p-tales">O famoso Teorema de Tales, que permite calcular alturas inacessíveis, como a de
+                pirâmides, usando retas
+                paralelas e transversais.
+            </p>
+
+            <article class="pitagoras-section">
+                <img src="imgs/pitagoras 2.png" alt="Pitágoras" id="pitagoras2-img">
+                <div class="pitagoras-content">
+                    <div class="titulo-2">
+                        <h2>Pitágoras</h2>
+                        <h3>(570 a.C. - 495 a.C.) </h3>
+                    </div>
+                    <p>Nascido na ilha de Samos em 570 a.C., Pitágoras foi um dos maiores pensadores da Antiguidade.
+                        Estudioso
+                        de matemática, filosofia, astronomia e música, fundou a influente Escola Pitagórica no sul da
+                        Itália,
+                        combinando saber científico e espiritualidade.
+                    </p>
+                    <br>
+                    <p>É mundialmente conhecido pelo Teorema de Pitágoras, que revolucionou a geometria ao relacionar os
+                        lados
+                        de um triângulo retângulo (a² = b² + c²). Esse teorema se tornou essencial em áreas como
+                        engenharia,
+                        física, navegação, construção civil e muito mais.
+                    </p>
+                    <div class="contribuicoes">
+                        <div>
+                            <h3 class="subtitulo">Principais Contribuições de Pitágoras</h3>
+                            <p>Seu teorema é um pilar da geometria e tem aplicações em:
+                            <ul>
+                                <li>Engenharia e construção civil</li>
+                                <li>Física e química</li>
+                                <li>Cartografia e navegação</li>
+                                <li>Arquitetura e design</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <img src="imgs/teorema pitagoras.png" alt="Teorema de Pitágoras" id="teorema-pitagoras-img">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--<section>
+            <div class="titulo-2">
+                <h2>Euclides</h2>
+                <h3>(325 a.C. - 265 a.C.)</h3>
+            </div>
+            <p>
+                Euclides, matemático grego de Alexandria (c. 300 a.C.), é conhecido como o "Pai da Geometria" por
+                sistematizar o conhecimento geométrico em sua obra "Os Elementos", que contém 13 volumes.
+            </p>
+            <p>
+                Ele não criou a geometria, mas desenvolveu um sistema lógico e dedutivo com definições, axiomas e
+                postulados para provar teoremas, influenciando a geometria, outras ciências e o pensamento científico
+                por séculos.
+            </p>
+        </section>-->
+    </main>
+</body>
+
+</html>

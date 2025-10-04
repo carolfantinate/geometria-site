@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'HussarBold';
+    src: url(../fontes/HussarBold.otf) format('opentype');
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f6f3ee;
+}
+
+/*---------------------section 1-------------------------*/
+
+.sec-1 {
+    padding: 20px 100px 50px 100px;
+    position: relative;
+}
+
+.titulo-1 {
+    font-family: 'HussarBold', sans-serif;
+    color: #15644c;
+    font-size: 5.5em;
+    letter-spacing: 5px;
+}
+
+.sec-1 p {
+    color: #73472c;
+    font-size: 17px;
+    width: 720px;
+}
+
+#p1 {
+    margin-bottom: 50px;
+}
+
+#desc {
+    padding-left: 30px;
+}
+
+#fonte {
+    font-size: 14px;
+    color: #cec2ae;
+}
+
+#pitagoras-img {
+    width: 520px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+/*---------------------section 2-------------------------*/
+
+.sec-2 {
+    background-color: #15644c;
+    color: #f6f3ee;
+    padding: 100px 100px;
+}
+
+.titulo-2 {
+    font-family: 'HussarBold', sans-serif;
+    font-size: 4em;
+    color: #eec9e2;
+    letter-spacing: 3px;
+}
+
+/*---------------------section 3-------------------------*/
+
+.sec-3 {
+    padding: 80px 100px;
+    background-color: #eec9e2;
+    position: relative;
+}
+
+.titulo-3 {
+    font-family: 'HussarBold', sans-serif;
+    font-size: 4em;
+    color: #15644c;
+    line-height: 1.1em;
+    letter-spacing: 3px;
+}
+
+.sec-3 h2 {
+    font-size: 18px;
+}
+
+span {
+    font-size: 0.7em;
+}
+
+article.cards {
+    display: flex;
+    margin: 30px 0px 50px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    background-color: #15644c;
+    color: #f6f3ee;
+    border-radius: 20px;
+    height: 320px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card h2 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.p3 {
+    color: #15644c;
+    width: 600px;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+.p3 h2 {
+    font-size: 18px;
+}
+
+#geo-dif-img {
+    width: 450px;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
