@@ -46,6 +46,11 @@
             font-size: 1.25em;
         }
 
+        .subtitulo {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
         /*---------------section 1----------------*/
 
         .sec-1 {
@@ -112,28 +117,20 @@
             color: #eec9e2;
         }
 
-        .subtitulo {
-            margin-bottom: 15px;
-            font-size: 1.4em;
-        }
-
         .p-tales {
             width: 800px;
         }
 
         .pitagoras-section {
             display: flex;
-            position: absolute;
             justify-content: space-between;
-            left: 0;
             width: 100%;
-            z-index: -2;
             margin-top: 40px;
             background-color: #15644c;
         }
 
         .pitagoras-content {
-            margin: 0 auto;
+            margin-left: 30%;
         }
 
         .pitagoras-content p {
@@ -164,11 +161,116 @@
         #pitagoras2-img {
             height: 500px;
             width: 350px;
+            position: absolute;
+            left: 0;
         }
 
         #teorema-pitagoras-img {
             width: 160px;
             border-radius: 20px;
+        }
+
+        /*----------------------------Euclides------------------------*/
+        .euclides-section {
+            margin-top: 90px;
+            width: 100%;
+        }
+
+        .euclides-section p {
+            width: 600px;
+            line-height: 1.6;
+        }
+
+        /*----------------------section 3------------------------*/
+        .sec-3 {
+            padding: 40px 100px;
+            position: relative;
+        }
+
+        .sec-3 .subtitulo {
+            color: #15644c;
+        }
+
+        .sec-3 ul {
+            list-style: inside;
+            color: #15644c;
+        }
+
+        #euclides-img {
+            position: absolute;
+            width: 500px;
+            right: 0;
+            top: -310px;
+        }
+
+        /*-------Arquimedes-------*/
+
+        .arquimedes-section {
+            margin-top: 70px;
+            color: #15644c;
+        }
+
+        .arquimedes-section .titulo-2 {
+            text-align: center;
+        }
+
+        .arquimedes-section p {
+            width: 600px;
+            line-height: 1.6;
+        }
+
+        .arquimedes-content {
+            margin-left: 40%;
+        }
+
+        #arquimedes-img {
+            width: 420px;
+            position: absolute;
+            left: 0;
+            top: 210px;
+        }
+
+        /*-------------pierre----------------*/
+        .pierre-section {
+            margin-top: 70px;
+            color: #15644c;
+        }
+
+        .pierre-section p {
+            width: 700px;
+            line-height: 1.6;
+        }
+
+        blockquote{
+            border-left: 4px solid #15644c;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+
+        #pierre-img {
+            width: 400px;
+            position: absolute;
+            right: 0;
+            top: 750px;
+        }
+
+        .cards-contribuicao {
+            color: #fff;
+            background-color: #15644c;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .contribuicoes {
+            display: flex;
+            margin: 0;
+        }
+
+        .pierre-section .subtitulo {
+            margin-top: 25px;
         }
     </style>
 </head>
@@ -264,23 +366,106 @@
                     </div>
                 </div>
             </article>
+
+            <article class="euclides-section">
+                <div class="titulo-2">
+                    <h2>Euclides</h2>
+                    <h3>(325 a.C. - 265 a.C.)</h3>
+                </div>
+                <p>
+                    Euclides, matemático grego de Alexandria (c. 300 a.C.), é conhecido como o "Pai da Geometria" por
+                    sistematizar o conhecimento geométrico em sua obra "Os Elementos", que contém 13 volumes.
+                </p>
+                <br>
+                <p>
+                    Ele não criou a geometria, mas desenvolveu um sistema lógico e dedutivo com definições, axiomas e
+                    postulados para provar teoremas, influenciando a geometria, outras ciências e o pensamento
+                    científico
+                    por séculos.
+                </p>
+            </article>
         </section>
 
-        <!--<section>
-            <div class="titulo-2">
-                <h2>Euclides</h2>
-                <h3>(325 a.C. - 265 a.C.)</h3>
-            </div>
-            <p>
-                Euclides, matemático grego de Alexandria (c. 300 a.C.), é conhecido como o "Pai da Geometria" por
-                sistematizar o conhecimento geométrico em sua obra "Os Elementos", que contém 13 volumes.
-            </p>
-            <p>
-                Ele não criou a geometria, mas desenvolveu um sistema lógico e dedutivo com definições, axiomas e
-                postulados para provar teoremas, influenciando a geometria, outras ciências e o pensamento científico
-                por séculos.
-            </p>
-        </section>-->
+        <section class="sec-3">
+            <img src="imgs/Euclides.png" alt="Euclides" id="euclides-img">
+            <article>
+                <h3 class="subtitulo">Principais Contribuições</h3>
+                <ul>
+                    <li>Criação de Os Elementos, obra fundamental da matemática.</li>
+                    <li>Desenvolvimento de um sistema dedutivo lógico para a geometria.</li>
+                    <li>Organização de definições, axiomas e teoremas de forma clara e coesa.</li>
+                    <li>Influência duradoura no ensino de matemática e no pensamento científico.</li>
+                </ul>
+            </article>
+            <img src="imgs/arquimedes.png" alt="Arquimedes" id="arquimedes-img">
+            <article class="arquimedes-section">
+                <div class="arquimedes-content">
+                    <div class="titulo-2">
+                        <h2>Arquimedes</h2>
+                        <h3>(287 a.C. - 212 a.C.)</h3>
+                    </div>
+                    <p>
+                        Arquimedes nasceu em Siracusa, por volta de 287 a.C. Foi físico, matemático e inventor, famoso
+                        pela
+                        Espiral de Arquimedes e a alavanca. Estudou em Alexandria, o centro intelectual da época,
+                        convivendo
+                        com grandes matemáticos.
+                    </p>
+                    <br>
+                    <p>
+                        Ele criou o Princípio de Arquimedes, que explica como um corpo mergulhado em um líquido perde
+                        peso
+                        equivalente ao volume de fluido deslocado, e desenvolveu métodos para calcular áreas, volumes e
+                        aproximar π (Pi).
+                    </p>
+                    <br>
+                    <h3 class="subtitulo">Principais Contribuições</h3>
+                    <ul>
+                        <li>Espiral de Arquimedes e alavanca</li>
+                        <li>Princípio de Arquimedes (gravidade específica)</li>
+                        <li>Cálculos de áreas, volumes e π (Pi)</li>
+                        <li>Método mecânico para problemas geométricos</li>
+                        <li>Influência duradoura na matemática e engenharia</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="pierre-section">
+                <div class="titulo-2">
+                    <h2>Pierre de Fermat</h2>
+                    <h3>(1601 - 1665)</h3>
+                </div>
+                <p>
+                    Pierre de Fermat foi um matemático, magistrado e polímata francês, também poeta e estudioso de línguas clássicas. Contribuiu para a física com o Princípio de Fermat em óptica, mas sua grande paixão era a teoria dos números.
+                </p> <br>
+                <p>
+                    Ele é mais famoso pelo Último Teorema de Fermat, que só foi provado mais de 300 anos depois, em 1994, por Andrew Wiles. O teorema é simples de enunciar:
+                </p>
+                <br>
+                <blockquote>
+                    <p>Não existem números inteiros positivos x, y, z e n (com n > 2) que satisfaçam a equação xⁿ + yⁿ = zⁿ.</p>
+                </blockquote>
+
+                <h3 class="subtitulo">Principais Contribuições</h3>
+                    <div class="contribuicoes">
+                        <div class="cards-contribuicao">
+                            Princípio de Fermat em óptica
+                        </div>
+                        <div class="cards-contribuicao">
+                            Desenvolvimento da teoria dos números
+                        </div>
+                        <div class="cards-contribuicao">
+                            Último Teorema de Fermat
+                        </div>
+                    </div>
+
+                <img src="imgs/pierre.png" alt="pierre de fermat" id="pierre-img">
+            </article>
+        </section>
+
+        <section>
+
+        </section>
     </main>
 </body>
 
