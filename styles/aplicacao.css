@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'HussarBold';
+    src: url(fontes/HussarBold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url(fontes/gliker.ttf) format('truetype');
+}
+
+.titulo-1 {
+    font-family: 'HussarBold', sans-serif;
+    color: #15644c;
+    font-size: 5.5em;
+    letter-spacing: 5px;
+}
+
+.sec-1 {
+    display: flex;
+    align-items: center;
+}
+
+.sec-1 p {
+    color: #73472c;
+    width: 650px;
+    font-size: 16px;
+}
+
+.sec-2 {
+    background-color: #15644c;
+    padding: 40px 100px 10px 100px;
+}
+
+.sec-2 .paragrafos {
+    width: 60%;
+}
+
+.titulo-2 {
+    font-family: 'HussarBold', sans-serif;
+    color: #eec9e2;
+    margin-top: 30px;
+}
+
+
+
+.calculadora-pitagoras label {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-right: 10px;
+    color: #eec9e2;
+}
+
+.calculadora-pitagoras input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffffc1;
+    font-size: 1.1em;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.calculadora-pitagoras button {
+    background-color: #eec9e2;
+    color: #12523b;
+    font-family: 'HussarBold', sans-serif;
+    font-size: 1.4em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.calculadora-pitagoras button:hover {
+    transform: scale(1.09);
+    transition: 0.5s;
+}
+
+.calculadora-pitagoras #resultado {
+    margin-top: 40px;
+    font-family: 'HussarBold', sans-serif;
+    font-size: 1.3em;
+    color: #fff;
+    min-height: 50px;
+}
+
+#teorema {
+    width: 200px;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.lados {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/*calculadora perimetro*/
+.sec-3 {
+    background-color: #eec9e2;
+    padding: 40px 100px;
+}
+
+.sec-3 h1 {
+    font-family: 'HussarBold', sans-serif;
+    color: #12523b;
+    margin-top: 30px;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.sec-3 p {
+    color: #12523b;
+    width: 700px;
+}
+
+#calc-area {
+    margin-top: 20px;
+    background-color: #dba1c8cf;
+    padding: 20px;
+    border-radius: 15px;
+    width: 420px;
+}
+
+#calc-area label {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #12523b;
+}
+
+#calc-area select {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #ffffff9a;
+    margin-bottom: 10px;
+}
+
+#campos-figura input {
+    margin: 6px 0;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #eec9e262;
+}
+
+#res-figura {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #12523b;
+}
+
+#calcular-area {
+    background-color: #12523b;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#calcular-area:hover {
+    background-color: #12523bc2;
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+#figura {
+    color: #12523b;
+    cursor: pointer;
+
+    &,
+    &::picker(select) {
+        appearance: base-select;
+    }
+}
+
+#figura:hover {
+    background-color: #ffffffd9;
+}
+
+/*---------conversor de unidade------------*/
+.sec-4 {
+    padding: 40px 100px 20px 100px;
+}
+
+.sec-4 h1 {
+    font-family: 'HussarBold', sans-serif;
+    color: #15644c;
+    margin-bottom: 20px;
+    font-size: 4em;
+}
+
+.sec-4 input {
+    width: 80px;
+    padding: 7px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 8px;
+    background-color: #ffffffc1;
+    color: #000;
+    text-align: center;
+}
+
+.sec-4 select {
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #ffffffc1;
+    color: #000;
+
+    &,
+    &::picker(select) {
+        appearance: base-select;
+    }
+}
+
+.sec-4 select:hover {
+    background-color: #ffffffd9;
+}
+
+#conversor {
+    background-color: #15644c;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+#btn-conv {
+    background-color: #eec9e2;
+    color: #12523b;
+    font-family: 'HussarBold', sans-serif;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#btn-conv:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: #e6b1d5;
+}
+
+.sec-4 p {
+    width: 50%;
+    color: #73472c;
+}
+
+#res-conv {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.disp-conv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seta {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+/*--------------cards---------------*/
+.img-card {
+    width: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+a.card-link {
+    width: 150px;
+    text-decoration: none;
+}
+
+a.card-link P {
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}

@@ -41,6 +41,10 @@ body {
     font-size: 1.4em;
 }
 
+.lista {
+    list-style: inside;
+}
+
 /*---------------section 1----------------*/
 
 .sec-1 {
@@ -87,6 +91,7 @@ body {
     right: 0;
     top: 0;
     position: absolute;
+    z-index: -1;
 }
 
 /*----------------------section 2------------------------*/
@@ -131,7 +136,6 @@ body {
     display: flex;
     width: 50%;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
 .contribuicoes p {
@@ -261,4 +265,77 @@ blockquote{
 
 .pierre-section .subtitulo {
     margin-top: 25px;
+}
+
+/*----------------Gauss------------------*/
+.sec-4 {
+    padding: 40px 100px;
+    position: relative;
+    background-color: #15644c;
+    color: #fff;
+}
+
+.sec-4 .titulo-2 {
+    color: #eec9e2;
+}
+
+.sec-4 p {
+    width: 700px;
+    line-height: 1.6;
+}
+
+.gauss-content{
+    margin-left: 35%;
+}
+
+#gauss-img {
+    width: 380px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.gauss-content-2 {
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+.sec-4 .subtitulo {
+    color: #eec9e2;
+}
+
+#curva-gauss-img{
+    width: 500px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+/*-----------rene-----------*/
+.sec-5{
+    padding: 50px 130px;
+    position: relative;
+    color: #15644c;
+}
+
+.sec-5 p {
+    width: 650px;
+    line-height: 1.6;
+}
+
+#rene-img {
+    width: 500px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rene-2 {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#plano-cart-img {
+    width: 250px;
 }

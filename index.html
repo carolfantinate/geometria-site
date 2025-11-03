@@ -15,7 +15,7 @@
         <h1 class="logo">Formath</h1>
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="#" id="atual">HOME</a></li>
                 <li><a href="index.html#areas">ÁREAS</a></li>
                 <li><a href="index.html#hist">HISTÓRIA</a></li>
                 <li><a href="nomes.html">NOMES</a></li>
@@ -44,10 +44,20 @@
         <section class="sec-2" id="hist">
             <h1 class="titulo-2">ORIGEM <br> & HISTÓRIA</h1>
             <div class="lados">
-                <img src="imgs/egito.jpg" alt="egito" class="img-hist">
+                <div class="flip">
+                    <div class="front" style="background-image: url(imgs/egito.png)">
+                    </div>
+                    <div class="back">
+                        <p>As pirâmides do Egito são um dos primeiros exemplos do uso da geometria na história. Sua
+                            construção envolveu cálculos precisos de ângulos, proporções e medidas, demonstrando o
+                            domínio dos antigos egípcios sobre formas e simetrias — saberes que deram origem à própria
+                            palavra “geometria”, que significa “medida da terra”.</p>
+                    </div>
+                </div>
                 <div>
                     <h2>Origem da Geometria</h2>
-                    <p>A palavra "Geometria" vem do grego e significa "medida da terra".</p>
+                    <p>A palavra Geometria é de origem grega e significa "medida da terra". Acredita-se que as primeiras
+                        medições de distâncias, áreas e volumes tenham surgido de necessidades do dia a dia. </p>
                     <br>
                     <h2>Surgimento Prático</h2>
                     <p>Civilizações antigas usavam a geometria para:
@@ -61,7 +71,7 @@
             </div>
             <div class="lados">
                 <div>
-                    <h2 class="rosa">Os Agrimensores no Egito</h2>
+                    <h2>Os Agrimensores no Egito</h2>
                     <p>No Egito, funcionários chamados agrimensores:
                     <ul class="lista">
                         <li>Avaliavam prejuízos causados por cheias dos rios</li>
@@ -71,17 +81,52 @@
                     Exemplo prático: um triângulo com lados de 3, 4 e 5 unidades forma um ângulo reto (90°).
                     </p>
                     <br>
-                    <h2 class="rosa">Geometria na Grécia</h2>
+                    <h2>Geometria na Grécia</h2>
                     <p>Foi na Grécia que a geometria se tornou uma ciência:
-                        <ul class="lista">
-                            <li>Desenvolvida de forma lógica e organizada</li>
-                            <li>Baseada em argumentação racional, não apenas em aplicações práticas</li>
-                        </ul></p>
+                    <ul class="lista">
+                        <li>Desenvolvida de forma lógica e organizada</li>
+                        <li>Baseada em argumentação racional, não apenas em aplicações práticas</li>
+                    </ul>
+                    </p>
                     <br>
-                    <h2 class="rosa">O que é Topologia?</h2>
-                    <p>Ramo da matemática que estuda formas e espaços, como uma extensão da geometria.</p>
+                    <h2>O que é Topologia?</h2>
+                    <p>Ramo da matemática que estuda formas e espaços, como uma extensão da geometria.</p> <br>
+                    <p>Para um topólogo, o que realmente importa é a estrutura essencial do objeto, especialmente o
+                        número de buracos que ele possui.</p> <br>
+                    <h2>Aplicações da Topologia</h2>
+                    <p>Apesar de seu caráter abstrato, a topologia possui inúmeras aplicações práticas.
+                        Ela é utilizada em áreas como:
+
+                    <ul class="lista">
+                        <li>Engenharia elétrica, no estudo de circuitos e conexões;</li>
+                        <li>
+                            Economia, na modelagem de sistemas complexos;
+                        </li>
+                        <li>Cartografia e geografia, na construção e análise de mapas;
+                        </li>
+                        <li>Tecnologia da informação, no desenvolvimento de redes e estruturas computacionais.</li>
+                    </ul>
+                    </p>
+
                 </div>
-                <img src="imgs/grecia.jpg" alt="grecia" class="img-hist">
+                <div class="flip-grecia">
+                    <div class="front" style="background-image: url(imgs/grecia.avif)">
+                    </div>
+                    <div class="back">
+                        <p>A Grécia Antiga foi o berço do pensamento geométrico como o conhecemos hoje. Os gregos
+                            buscaram compreender não apenas as formas e medidas, mas também os princípios que explicam a
+                            harmonia e a ordem do mundo. Para eles, a geometria era uma linguagem universal da razão e
+                            da beleza.</p> <br>
+                        <p>Construções como o Partenon, em Atenas, refletem essa busca pela perfeição. Suas proporções e
+                            alinhamentos foram calculados com precisão, aplicando conceitos geométricos que equilibram
+                            estética e estrutura. A harmonia visual do templo nasce de relações matemáticas
+                            cuidadosamente estudadas.</p> <br>
+                        <p>Foi também na Grécia que surgiram nomes fundamentais como Pitágoras, Euclides e Arquimedes,
+                            que transformaram a geometria em uma ciência formal. Seus estudos lançaram as bases da
+                            matemática moderna e influenciam até hoje a arquitetura, a arte e o pensamento científico.
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -91,21 +136,21 @@
             <article class="cards">
                 <div class="card">
                     <h2>GEOMETRIA ANALÍTICA</h2>
-                    <img src="" alt="">
+                    <img src="imgs/analitica.png" alt="geometria analitica" class="img-geometrias">
                     <p>Une álgebra e geometria, usando equações e coordenadas para representar pontos, retas e curvas no
                         plano.</p>
                 </div>
 
                 <div class="card">
                     <h2>GEOMETRIA PLANA</h2>
-                    <img src="" alt="">
+                    <img src="imgs/plana.png" alt="geometria plana" class="img-geometrias">
                     <p>Analisa figuras em duas dimensões, como triângulos, quadrados e círculos, estudando lados,
                         ângulos e perímetros.</p>
                 </div>
 
                 <div class="card">
                     <h2>GEOMETRIA ESPACIAL</h2>
-                    <img src="" alt="">
+                    <img src="imgs/espacial.png" alt="geometria espacial" class="img-geometrias" id="espacial">
                     <p>Trata de objetos em três dimensões, como cubos, esferas e pirâmides, focando em volume, área e
                         posição no espaço.</p>
                 </div>
@@ -127,7 +172,29 @@
                 <img src="imgs/geo dif.png" alt="geometria diferencial" id="geo-dif-img">
             </article>
         </section>
+        <button id="btnTopo" title="Voltar ao topo">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
     </main>
+    <script>
+        const btnTopo = document.getElementById("btnTopo");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        };
+
+        btnTopo.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

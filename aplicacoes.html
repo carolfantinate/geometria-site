@@ -8,102 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        @font-face {
-            font-family: 'HussarBold';
-            src: url(../fontes/HussarBold.otf) format('opentype');
-        }
-
-        @font-face {
-            font-family: 'Gliker';
-            src: url(../fontes/gliker.ttf) format('truetype');
-        }
-
-        .titulo-1 {
-            font-family: 'HussarBold', sans-serif;
-            color: #15644c;
-            font-size: 5.5em;
-            letter-spacing: 5px;
-        }
-
-        section {
-            padding: 20px 100px 50px 100px;
-        }
-
-        .sec-1 p {
-            color: #73472c;
-            width: 720px;
-        }
-
-        .verde {
-            background-color: #15644c;
-        }
-
-        .titulo-2 {
-            font-family: 'HussarBold', sans-serif;
-            color: #eec9e2;
-            margin-top: 30px;
-        }
-
-        label {
-            font-weight: 600;
-            font-size: 1.3em;
-            margin-right: 10px;
-            color: #eec9e2;
-        }
-
-        input[type="number"] {
-            width: 120px;
-            padding: 10px;
-            border-radius: 8px;
-            background-color: #ffffffc1;
-            font-size: 1.1em;
-            font-family: "Poppins", sans-serif;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        button {
-            background-color: #eec9e2;
-            color: #12523b;
-            font-family: 'HussarBold', sans-serif;
-            font-size: 1.5em;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            letter-spacing: 2px;
-            margin-top: 20px;
-        }
-
-        button:hover {
-            transform: scale(1.1);
-            transition: 0.5s;
-        }
-
-        #resultado {
-            margin-top: 40px;
-            font-family: 'HussarBold', sans-serif;
-            font-size: 1.3em;
-            color: #fff;
-            min-height: 50px;
-        }
-
-        #teorema{
-            width: 200px;
-            border-radius: 20px;
-            height: 200px;
-        }
-
-        .lados {
-            display: flex;
-            width: 100%;
-            justify-content: space-evenly;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/aplicacao.css">
 </head>
 
 <body>
@@ -115,55 +20,167 @@
                 <li><a href="index.html#areas">ÁREAS</a></li>
                 <li><a href="index.html#hist">HISTÓRIA</a></li>
                 <li><a href="nomes.html">NOMES</a></li>
-                <li><a href="aplicacoes.html">APLICAÇÕES</a></li>
+                <li><a href="#" id="atual">APLICAÇÕES</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="sec-1">
-            <h1 class="titulo-1">Aplicações</h1>
-            <p>A geometria tem aplicações práticas no dia a dia em diversas áreas, como arquitetura e engenharia para
-                projetos de construção, design de produtos, e navegação por GPS. Ela também aparece na natureza em
-                formas de plantas e animais, na culinária ao dividir alimentos, e até em atividades simples como
-                escolher uma roupa. </p>
-            <br>
-            <p>O Teorema de Pitágoras é usado no dia a dia para calcular distâncias e garantir ângulos retos em projetos
-                de construção civil, arquitetura e topografia. Outras aplicações incluem navegação (GPS), design de
-                circuitos elétricos e na computação gráfica, além de resolver problemas práticos como calcular a medida
-                de um objeto ou a melhor rota a ser seguida. </p>
+            <div>
+                <h1 class="titulo-1">Aplicações</h1>
+                <p>A geometria está presente em diversos aspectos do nosso cotidiano e desempenha um papel fundamental
+                    em
+                    muitas profissões. Desde planejar a disposição dos móveis em um quarto, calcular a quantidade de
+                    tinta
+                    necessária para pintar uma parede, até projetar edifícios, pontes e estradas, os conceitos
+                    geométricos
+                    ajudam a organizar e otimizar espaços, garantir segurança e eficiência. Profissões como arquitetura,
+                    engenharia, design, construção civil e até moda dependem diretamente da aplicação prática da
+                    geometria
+                    para resolver problemas e criar soluções funcionais e estéticas.</p>
+            </div>
+            <div class="cards">
+                <a href="aplicacoes.html#calc-pit" class="card-link">
+                    <img src="imgs/teorema pitagoras.png" alt="teorema de pitagoras" class="img-card">
+                    <p>Calculadora da Hipotenusa</p>
+                </a>
+                <a href="aplicacoes.html#calculadora-area" class="card-link">
+                    <img src="imgs/area.png" alt="area e perimetro" class="img-card">
+                    <p>Calculadora de Área e Perímetro</p>
+                </a>
+                <a href="aplicacoes.html#conversor-unidades" class="card-link">
+                    <img src="imgs/conversor.png" alt="conversor de unidades" class="img-card">
+                    <p>Conversor de Unidades</p>
+                </a>
+            </div>
         </section>
+
+        <!-- Calculadora de hipotenusa -->
+        <section class="sec-2" id="calc-pit">
+            <h1 class="titulo-2">Calculadora <br> de Hipotenusa</h1>
+            <div class="lados">
+                <div class="calculadora-pitagoras">
+                    <label for="cateto1">Cateto 1:</label>
+                    <input type="number" id="cateto1" step="any" /><br /><br />
+                    <label for="cateto2">Cateto 2:</label>
+                    <input type="number" id="cateto2" step="any" /><br />
+                    <button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
+                    <h2 id="resultado"></h2>
+                </div>
+                <div class="paragrafos">
+                    <p>A geometria tem aplicações práticas no dia a dia em diversas áreas, como arquitetura e engenharia
+                        para
+                        projetos de construção, design de produtos, e navegação por GPS. Ela também aparece na natureza
+                        em
+                        formas de plantas e animais, na culinária ao dividir alimentos, e até em atividades simples como
+                        escolher uma roupa. </p>
+                    <br>
+                    <p>O Teorema de Pitágoras é usado no dia a dia para calcular distâncias e garantir ângulos retos em
+                        projetos
+                        de construção civil, arquitetura e topografia. Outras aplicações incluem navegação (GPS), design
+                        de
+                        circuitos elétricos e na computação gráfica, além de resolver problemas práticos como calcular a
+                        medida
+                        de um objeto ou a melhor rota a ser seguida. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadora de área/perímetro -->
+        <section class="sec-3" id="calculadora-area">
+            <h1>Calculadora: Área <br> & Perímetro</h1>
+            <div class="lados">
+                <div>
+                    <p>O cálculo de área e perímetro está presente em diversas situações do nosso cotidiano. Por
+                        exemplo, quando precisamos medir o tamanho de um terreno, calcular a quantidade de piso para um
+                        cômodo ou até mesmo cercar um jardim, utilizamos esses conceitos. Saber calcular a área ajuda a
+                        determinar o espaço que algo ocupa, enquanto o perímetro indica o contorno ou a medida das
+                        bordas de uma figura. Assim, compreender esses conceitos é essencial para resolver problemas
+                        práticos e tomar decisões de forma mais precisa no dia a dia.</p> <br>
+                    <p>O conhecimento sobre área e perímetro é valioso em profissões como engenharia, arquitetura e
+                        design, onde é necessário planejar espaços. Também é útil em atividades cotidianas, como
+                        confeccionar roupas, fazer artesanato ou organizar móveis, ajudando a alcançar melhores
+                        resultados. Assim, dominar esses conceitos é uma habilidade prática essencial.</p>
+                </div>
+                <div id="calc-area">
+                    <label for="figura">Figura:</label>
+                    <select id="figura">
+                        <option value="quadrado">Quadrado</option>
+                        <option value="retangulo">Retângulo</option>
+                        <option value="triangulo">Triângulo</option>
+                        <option value="circulo">Círculo</option>
+                    </select>
+                    <div id="campos-figura"></div>
+                    <button id="calcular-area">Calcular</button>
+                    <div id="res-figura"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sec-4" id="conversor-unidades">
+            <h1>Conversor de Unidades</h1>
+            <div class="lados">
+                <p>As unidades de medida estão presentes em praticamente tudo ao nosso redor, permitindo quantificar
+                    comprimento, peso, volume, tempo e outras grandezas de forma padronizada. No cotidiano, usamos
+                    unidades de medida para medir a altura de uma pessoa, pesar alimentos, calcular a distância entre
+                    lugares ou medir a quantidade de líquido em um recipiente. Saber utilizar corretamente essas
+                    unidades garante precisão e evita erros nas tarefas diárias, desde cozinhar até construir ou viajar.
+                </p>
+                <div id="conversor">
+                    <label>Valor: <input id="valorConv" type="number" step="any" value="1"></label>
+                    <div class="disp-conv">
+                        <label>De:
+                            <select id="un-de">
+                                <option value="mm">mm</option>
+                                <option value="cm">cm</option>
+                                <option value="m">m</option>
+                                <option value="km">km</option>
+                            </select>
+                        </label>
+                        <i class="fa-solid fa-arrow-right" id="seta"></i>
+                        <label>Para:
+                            <select id="un-para">
+                                <option value="mm">mm</option>
+                                <option value="cm">cm</option>
+                                <option value="m">m</option>
+                                <option value="km">km</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button id="btn-conv">Converter</button>
+                    <div id="res-conv"></div>
+                </div>
+            </div>
+        </section>
+        <button id="btnTopo" title="Voltar ao topo">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
     </main>
 
-    <section class="verde">
-        <h1 class="titulo-2">Calculadora <br> de Hipotenusa</h1>
-        <div class="lados">
-            <div>
-                <label for="cateto1">Cateto 1:</label>
-                <input type="number" id="cateto1" step="any" /><br /><br />
-                <label for="cateto2">Cateto 2:</label>
-                <input type="number" id="cateto2" step="any" /><br />
-                <button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
-                <h2 id="resultado"></h2>
-            </div>
-            <img src="imgs/teorema pitagoras.png" alt="teorema de pitagoras" id="teorema">
-        </div>
-    </section>
-
     <script>
-        function calcularHipotenusa() {
-            const cateto1 = parseFloat(document.getElementById('cateto1').value);
-            const cateto2 = parseFloat(document.getElementById('cateto2').value);
+        //----------------------botão voltar ao topo-----------------------
+        const btnTopo = document.getElementById("btnTopo");
 
-            if (isNaN(cateto1) || isNaN(cateto2) || cateto1 <= 0 || cateto2 <= 0) {
-                document.getElementById('resultado').textContent = 'Por favor, insira valores válidos e positivos para os catetos.';
-                return;
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
             }
+        };
 
-            const hipotenusa = Math.sqrt(cateto1 ** 2 + cateto2 ** 2);
-            document.getElementById('resultado').textContent = `A hipotenusa é: ${hipotenusa.toFixed(2)}`;
-        }
+        btnTopo.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     </script>
+
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script src="aplicacoes.js"></script>
 </body>
 
 </html>

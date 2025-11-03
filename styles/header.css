@@ -27,5 +27,53 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #73472cb1;
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.logo {
+    color: #15644c;
+    font-family: 'Gliker', serif;
+    font-weight: normal;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+#atual {
+    font-weight: 600;
+}
+
+#atual:hover {
+    background-color: transparent;
+    color: #73472c;
+    padding: 0;
+}
+
+/*----------btn------------*/
+#btnTopo {
+  display: none; 
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; 
+  background-color: #ff9159ca;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+#btnTopo:hover {
+  background-color: #ff9059;
 }
