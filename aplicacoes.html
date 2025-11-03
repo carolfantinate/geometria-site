@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formath - Geometria</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @font-face {
+            font-family: 'HussarBold';
+            src: url(../fontes/HussarBold.otf) format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Gliker';
+            src: url(../fontes/gliker.ttf) format('truetype');
+        }
+
+        .titulo-1 {
+            font-family: 'HussarBold', sans-serif;
+            color: #15644c;
+            font-size: 5.5em;
+            letter-spacing: 5px;
+        }
+
+        section {
+            padding: 20px 100px 50px 100px;
+        }
+
+        .sec-1 p {
+            color: #73472c;
+            width: 720px;
+        }
+
+        .verde {
+            background-color: #15644c;
+        }
+
+        .titulo-2 {
+            font-family: 'HussarBold', sans-serif;
+            color: #eec9e2;
+            margin-top: 30px;
+        }
+
+        label {
+            font-weight: 600;
+            font-size: 1.3em;
+            margin-right: 10px;
+            color: #eec9e2;
+        }
+
+        input[type="number"] {
+            width: 120px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #ffffffc1;
+            font-size: 1.1em;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #eec9e2;
+            color: #12523b;
+            font-family: 'HussarBold', sans-serif;
+            font-size: 1.5em;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        #resultado {
+            margin-top: 40px;
+            font-family: 'HussarBold', sans-serif;
+            font-size: 1.3em;
+            color: #fff;
+            min-height: 50px;
+        }
+
+        #teorema{
+            width: 200px;
+            border-radius: 20px;
+            height: 200px;
+        }
+
+        .lados {
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Formath</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#areas">ÁREAS</a></li>
+                <li><a href="index.html#hist">HISTÓRIA</a></li>
+                <li><a href="nomes.html">NOMES</a></li>
+                <li><a href="aplicacoes.html">APLICAÇÕES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-1">
+            <h1 class="titulo-1">Aplicações</h1>
+            <p>A geometria tem aplicações práticas no dia a dia em diversas áreas, como arquitetura e engenharia para
+                projetos de construção, design de produtos, e navegação por GPS. Ela também aparece na natureza em
+                formas de plantas e animais, na culinária ao dividir alimentos, e até em atividades simples como
+                escolher uma roupa. </p>
+            <br>
+            <p>O Teorema de Pitágoras é usado no dia a dia para calcular distâncias e garantir ângulos retos em projetos
+                de construção civil, arquitetura e topografia. Outras aplicações incluem navegação (GPS), design de
+                circuitos elétricos e na computação gráfica, além de resolver problemas práticos como calcular a medida
+                de um objeto ou a melhor rota a ser seguida. </p>
+        </section>
+    </main>
+
+    <section class="verde">
+        <h1 class="titulo-2">Calculadora <br> de Hipotenusa</h1>
+        <div class="lados">
+            <div>
+                <label for="cateto1">Cateto 1:</label>
+                <input type="number" id="cateto1" step="any" /><br /><br />
+                <label for="cateto2">Cateto 2:</label>
+                <input type="number" id="cateto2" step="any" /><br />
+                <button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
+                <h2 id="resultado"></h2>
+            </div>
+            <img src="imgs/teorema pitagoras.png" alt="teorema de pitagoras" id="teorema">
+        </div>
+    </section>
+
+    <script>
+        function calcularHipotenusa() {
+            const cateto1 = parseFloat(document.getElementById('cateto1').value);
+            const cateto2 = parseFloat(document.getElementById('cateto2').value);
+
+            if (isNaN(cateto1) || isNaN(cateto2) || cateto1 <= 0 || cateto2 <= 0) {
+                document.getElementById('resultado').textContent = 'Por favor, insira valores válidos e positivos para os catetos.';
+                return;
+            }
+
+            const hipotenusa = Math.sqrt(cateto1 ** 2 + cateto2 ** 2);
+            document.getElementById('resultado').textContent = `A hipotenusa é: ${hipotenusa.toFixed(2)}`;
+        }
+    </script>
+</body>
+
+</html>
