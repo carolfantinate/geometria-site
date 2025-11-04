@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'HussarBold';
-    src: url(/fontes/HussarBold.otf) format('opentype');
+    src: url(../fontes/HussarBold.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'Gliker';
-    src: url(/fontes/gliker.ttf) format('truetype');
+    src: url(../fontes/gliker.ttf) format('truetype');
 }
 
 body {
